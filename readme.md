@@ -44,14 +44,12 @@ This is the parent flow and is initiated via a flow schedule. This flow will che
 
 This parent flow will call the following child flows:
 
+   1. Initialize
+   
+   2. Process Contractor
+   
+   3. Send Notification Emails
 
-    1.1 - Initialize
-
-
-    1.2 - Process Contractor
-
-
-    1.3 - Send Notification Emails
 
 **1.1 - Initialize**
 
