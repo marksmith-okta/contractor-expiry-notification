@@ -25,7 +25,7 @@ Conversion notes:
 # Contractor Expiry Notification
 
 
-## <span style="text-decoration:underline;">Overview</span>
+## Overview
 
 Many organizations utilize contractors as well as full time employees. A contractor would usually have a contract expiry date. That is the date at which their current contract is due to expire. Certain people within the organization, like the contractors manager, will need to be notified ahead of the expiry date, so they can potentially renew the employees contract.
 
@@ -74,11 +74,9 @@ Before you get started, here are the things you’ll need:
 *   Access to the tenants users, so the custom attribute can be populated
 *   Access to an account for Office 365 Mail
 
-<span style="text-decoration:underline;">Setup Steps</span>
+## Setup Steps
 
 Please follow these step-by-step instructions to set up this workflow.
-
-
 
 1. Within your Okta tenants administration console, under Profile Editor, open the Okta default profile and add the following custom attribute:
     1. Data Type: string
@@ -92,17 +90,15 @@ Please follow these step-by-step instructions to set up this workflow.
 4. Within the flow titled 1.0 - Contractor Expiry Notification, update the Okta card to use your Okta connector.
 5. Within the flow titled 1.3 - Send Notification Emails, update the Office 365 Mail card to use your Office 365 connector.
 
-<span style="text-decoration:underline;">Testing this Flow</span>
+## Testing this Flow
 
 This is how to test the flow.
-
-
 
 1. Ensure the configuration table value for addressList contains an address that you can receive emails for testing.
 2. Set the value of the custom attribute for at least one user. The date format must match the following: yyyy-MM-DD. Set the value to be a set number of days into the future. EG. 30 days. (This value must match the setting on the configuration table for days)
 3. Initiate the parent flow (1.0 - Contractor Expiry Notification) by clicking the Test button.
 4. If the flow finds at least one user with a contract expiry date matching the set number of days, then an email will be sent to the configured recipients.
 
-<span style="text-decoration:underline;">Limitations & Known Issues</span>
+## Limitations & Known Issues
 
 There are no limitations or known issues, at this time.
